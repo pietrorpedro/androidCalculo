@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".telasIrmas.IrmaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar"/>
+
+        <TextView
+            android:id="@+id/textTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar Carta para o Irmão"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:textSize="20dp"
+            android:layout_above="@+id/textEnviado"/>
+
+        <TextView
+            android:id="@+id/textEnviado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@+id/inputs"/>
+
+        <LinearLayout
+            android:id="@+id/inputs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/inputTitulo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="Título"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/inputConteudo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="Conteúdo"
+                android:inputType="text"/>
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enviar"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

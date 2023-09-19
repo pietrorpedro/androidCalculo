@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AppCalculo"
         tools:targetApi="31">
         <activity
+            android:name=".telasIrmas.IrmaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".telasIrmas.IrmaActivity"
+            android:exported="false" />
+        <activity
             android:name=".BhaskaraActivity"
             android:exported="false" />
         <activity
